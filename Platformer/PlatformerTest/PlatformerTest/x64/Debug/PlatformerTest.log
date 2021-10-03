@@ -1,151 +1,156 @@
 ﻿  main.cpp
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(65,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(149,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(150,24): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(192,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(192,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(249,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(249,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(270,22): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(65,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(149,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(150,24): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(192,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(192,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(249,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(249,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(270,22): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(271,23): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(271,23): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(272,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(272,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(273,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(273,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(39,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(39,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(43,29): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(39,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(39,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(43,29): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(43,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(43,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(72,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(77,17): warning C4551: в вызове функции отсутствует список аргументов
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(79,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(88,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(97,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(100,17): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(152,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(153,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(155,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(180,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(192,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(196,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(226,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(233,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(249,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(264,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(399,1): warning C4305: аргумент: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(533,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(539,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(545,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(581,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(622,1): warning C4305: =: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(664,13): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(762,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(72,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(77,17): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(79,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(88,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(97,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(100,17): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(152,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(153,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(155,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(180,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(192,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(196,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(226,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(233,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(249,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(264,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(399,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(533,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(539,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(545,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(581,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(622,1): warning C4305: =: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(664,13): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(762,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(763,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(763,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(764,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(764,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(765,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(765,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(766,17): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(766,17): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(767,23): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(767,23): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(768,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(768,18): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(769,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(769,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(770,12): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(770,12): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(771,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(771,13): warning C4244: =: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(772,17): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(772,17): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(773,16): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(773,16): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(774,16): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(774,16): warning C4244: =: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(847,20): warning C4305: +=: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(862,20): warning C4305: +=: усечение из "double" в "float"
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(926,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(935,31): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(1464,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(1999,37): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(847,20): warning C4305: +=: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(862,20): warning C4305: +=: усечение из "double" в "float"
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(926,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(935,31): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(1464,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(1999,37): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
           with
           [
               T=int
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(2007,36): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(2007,36): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
           with
           [
               T=int
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(2015,36): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(2015,36): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
           with
           [
               T=int
           ]
-C:\Platformer\PlatformerTest\PlatformerTest\Level.h(319): warning C4715: Level::GetObject: значение возвращается не при всех путях выполнения
-C:\Platformer\PlatformerTest\PlatformerTest\main.cpp(2041): warning C4715: startGame: значение возвращается не при всех путях выполнения
-  PlatformerTest.vcxproj -> C:\Platformer\PlatformerTest\x64\Debug\PlatformerTest.exe
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  Создание кода...
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\Level.h(319): warning C4715: Level::GetObject: значение возвращается не при всех путях выполнения
+C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\PlatformerTest\main.cpp(2041): warning C4715: startGame: значение возвращается не при всех путях выполнения
+  PlatformerTest.vcxproj -> C:\Users\artem\GitHub Repositories\Platformer\PlatformerTest\x64\Debug\PlatformerTest.exe
