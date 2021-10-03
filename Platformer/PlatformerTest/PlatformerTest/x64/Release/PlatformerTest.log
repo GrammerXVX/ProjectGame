@@ -1,0 +1,131 @@
+﻿  mainglav.cpp
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(65,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(149,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(150,24): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(190,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(190,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(247,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(247,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(268,22): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(269,23): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(270,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\level1.h(271,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\Sprites.h(54,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\Sprites.h(54,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(31,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(31,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(35,29): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(35,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(63,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(68,17): warning C4551: в вызове функции отсутствует список аргументов
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(70,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(79,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(88,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(91,17): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(138,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(139,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(141,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(164,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(212,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(216,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(246,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(252,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(266,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(281,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(402,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(479,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(502,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(539,1): warning C4305: =: усечение из "double" в "float"
+C:\Platformer\PlatformerTest\PlatformerTest\mainglav.cpp(684,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Time __cdecl sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QEAA?AVTime@2@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Time __cdecl sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QEBA?AVTime@2@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl sf::Time::asMicroseconds(void)const " (__imp_?asMicroseconds@Time@sf@@QEBA_JXZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Transform const & __cdecl sf::Transformable::getTransform(void)const " (__imp_?getTransform@Transformable@sf@@QEBAAEBVTransform@2@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Transformable::scale(float,float)" (__imp_?scale@Transformable@sf@@QEAAXMM@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QEAAXMM@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Transformable::setPosition(float,float)" (__imp_?setPosition@Transformable@sf@@QEAAXMM@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Vector2<float> const & __cdecl sf::View::getCenter(void)const " (__imp_?getCenter@View@sf@@QEBAAEBV?$Vector2@M@2@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::View::reset(class sf::Rect<float> const &)" (__imp_?reset@View@sf@@QEAAXAEBV?$Rect@M@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::View::setCenter(float,float)" (__imp_?setCenter@View@sf@@QEAAXMM@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::View::View(void)" (__imp_??0View@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Texture::setSmooth(bool)" (__imp_?setSmooth@Texture@sf@@QEAAX_N@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Vector2<unsigned int> __cdecl sf::Texture::getSize(void)const " (__imp_?getSize@Texture@sf@@QEBA?AV?$Vector2@I@2@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Texture::loadFromImage(class sf::Image const &,class sf::Rect<int> const &)" (__imp_?loadFromImage@Texture@sf@@QEAA_NAEBVImage@2@AEBV?$Rect@H@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Font@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Font::~Font(void)" (__imp_??1Font@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Font::Font(void)" (__imp_??0Font@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QEAA@EEEE@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Image::createMaskFromColor(class sf::Color const &,unsigned char)" (__imp_?createMaskFromColor@Image@sf@@QEAAXAEBVColor@2@E@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Image::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Image@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Image::~Image(void)" (__imp_??1Image@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Image::Image(void)" (__imp_??0Image@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Red" (__imp_?Red@Color@sf@@2V12@B).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) bool __cdecl sf::operator==(class sf::String const &,class sf::String const &)" (__imp_??8sf@@YA_NAEBVString@0@0@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Window::display(void)" (__imp_?display@Window@sf@@QEAAXXZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QEAA_NAEAVEvent@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QEBA_NXZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Window::close(void)" (__imp_?close@Window@sf@@QEAAXXZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QEAAXAEBVDrawable@2@AEBVRenderStates@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Vector2<float> __cdecl sf::RenderTarget::mapPixelToCoords(class sf::Vector2<int> const &)const " (__imp_?mapPixelToCoords@RenderTarget@sf@@QEBA?AV?$Vector2@M@2@AEBV?$Vector2@H@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::RenderTarget::setView(class sf::View const &)" (__imp_?setView@RenderTarget@sf@@QEAAXAEBVView@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QEAAXAEBVColor@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Shape::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Shape@sf@@QEAAXAEBVColor@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::String & __cdecl sf::String::operator=(class sf::String const &)" (__imp_??4String@sf@@QEAAAEAV01@AEBV01@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::String::String(void)" (__imp_??0String@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::locale const &)" (__imp_??0String@sf@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVlocale@3@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::String::String(class sf::String const &)" (__imp_??0String@sf@@QEAA@AEBV01@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (__imp_??0RectangleShape@sf@@QEAA@AEBV?$Vector2@M@1@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QEAA@III@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) private: virtual void __cdecl sf::Sprite::draw(class sf::RenderTarget &,class sf::RenderStates)const " (__imp_?draw@Sprite@sf@@EEBAXAEAVRenderTarget@2@VRenderStates@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Sprite::setColor(class sf::Color const &)" (__imp_?setColor@Sprite@sf@@QEAAXAEBVColor@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Sprite::setTextureRect(class sf::Rect<int> const &)" (__imp_?setTextureRect@Sprite@sf@@QEAAXAEBV?$Rect@H@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QEAAXAEBVTexture@2@_N@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Text::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Text@sf@@QEAAXAEBVColor@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QEAAXI@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QEAAXAEBVFont@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QEAAXAEBVString@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Text::Text(void)" (__imp_??0Text@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Vector2<int> __cdecl sf::Mouse::getPosition(class sf::Window const &)" (__imp_?getPosition@Mouse@sf@@SA?AV?$Vector2@H@2@AEBVWindow@2@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static bool __cdecl sf::Mouse::isButtonPressed(enum sf::Mouse::Button)" (__imp_?isButtonPressed@Mouse@sf@@SA_NW4Button@12@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Sprite &&)" (__imp_??0Sprite@sf@@QEAA@$$QEAV01@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __cdecl sf::RectangleShape::~RectangleShape(void)" (__imp_??1RectangleShape@sf@@UEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __cdecl sf::Text::~Text(void)" (__imp_??1Text@sf@@UEAA@XZ).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QEAA@AEBV01@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: class sf::Sprite & __cdecl sf::Sprite::operator=(class sf::Sprite const &)" (__imp_??4Sprite@sf@@QEAAAEAV01@AEBV01@@Z).
+mainglav.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __cdecl sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UEAA@XZ).
+C:\Platformer\PlatformerTest\x64\Release\PlatformerTest.exe : fatal error LNK1120: неразрешенных внешних элементов: 67
