@@ -1,0 +1,45 @@
+# Build directories
+[Bb]uild/
+[bB]in/
+[obj]/
+Debug/
+Release/
+x64/
+.ipch/
+*.VC.db
+*.opendb
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeScripts/
+Testing/
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# SFML or third-party binaries
+*.dll
+*.lib
+*.pdb
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.bak
+*.old

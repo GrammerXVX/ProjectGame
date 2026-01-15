@@ -18,7 +18,7 @@ int LvUpD = 0, LvUpS = 0;
 int bought[2] = { 0,0 };
 int x=1920, y=1080;
 RenderWindow window(VideoMode(x, y), "2D Shooter");
-////////////////////////////////////Общий класс-родитель//////////////////////////
+////////////////////////////////////пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ//////////////////////////
 class Entity {
 public:
 	bool movement =false;
@@ -43,7 +43,7 @@ public:
 		return FloatRect(x, y, w, h);
 	}
 
-	virtual void update(float time) = 0;//все потомки переопределяют эту ф-цию
+	virtual void update(float time) = 0;//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ-пїЅпїЅпїЅ
 
 };
 
@@ -113,7 +113,7 @@ public:
 				state = right_Top;
 			}
 
-			/////выстрел
+			/////пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if (Keyboard::isKeyPressed(Keyboard::Space))
 			{
 				isShoot = true;
@@ -154,7 +154,7 @@ public:
 		case up: break;
 		case down: dx = 0; CurrentFrame += 0.005 * time; break;
 		case stay: break;
-		case right_Top: dx = speed; break;//состояние вправо вверх, просто продолжаем идти вправо
+		case right_Top: dx = speed; break;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 		x += dx * time;
 		checkCollisionWithMap(dx, 0);
@@ -186,7 +186,7 @@ public:
 	float CurrentFrame1 = 0; bool isShoot = 1, onGround = true;;
 
 	Enemy(Image& image, String Name, Level& lvl, float X, float Y, int W, int H) :Entity(image, Name, X, Y, W, H) {
-		obj = lvl.GetObjects("solid");//инициализируем.получаем нужные объекты для взаимодействия врага с картой
+		obj = lvl.GetObjects("solid");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		obj = lvl.GetObjects("solidInvis");
 		if (name == "EasyEnemy") {
 			dx = 0.21;
@@ -210,7 +210,7 @@ public:
 				sprite.getTransform();
 				if (getRect().intersects(obj[i].rect))
 				{
-					if (obj[i].name == "solid" || obj[i].name == "solidInvis")//если встретили препятствие
+					if (obj[i].name == "solid" || obj[i].name == "solidInvis")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
 						if (Dy > 0)
 						{
@@ -247,7 +247,7 @@ public:
 
 		if (name == "EasyEnemy") {
 			CurrentFrame1 += 0.005 * time;
-			//moveTimer += time;if (moveTimer>3000){ dx *= -1; moveTimer = 0; }//меняет направление примерно каждые 3 сек(альтернативная версия смены направления)
+			//moveTimer += time;if (moveTimer>3000){ dx *= -1; moveTimer = 0; }//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 			checkCollisionWithMap(dx, 0, time);
 			x += dx * time;
 			sprite.setPosition(x + w / 2, y + h / 2);
@@ -262,7 +262,7 @@ public:
 		}
 		if (name == "EasyShootEnemy") {
 			CurrentFrame1 += 0.005 * time;
-			//moveTimer += time;if (moveTimer>3000){ dx *= -1; moveTimer = 0; }//меняет направление примерно каждые 3 сек(альтернативная версия смены направления)
+			//moveTimer += time;if (moveTimer>3000){ dx *= -1; moveTimer = 0; }//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 			checkCollisionWithMap(dx, 0, time);
 			x += dx * time;
 			sprite.setPosition(x + w / 2, y + h / 2);
@@ -302,7 +302,7 @@ public:
 		if (name == "ShootGun") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -319,7 +319,7 @@ public:
 		if (name == "AWP") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -336,7 +336,7 @@ public:
 		if (name == "AutoGun") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -419,7 +419,7 @@ public:
 			{
 				if (CurrentFrame > 8) CurrentFrame -= 8;
 				sprite.setTextureRect(IntRect(32 * int(CurrentFrame), 0, 32, 32));
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -439,7 +439,7 @@ public:
 			{
 				if (CurrentFrame > 8) CurrentFrame -= 8;
 				sprite.setTextureRect(IntRect(32 * int(CurrentFrame), 0, 32, 32));
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -459,7 +459,7 @@ public:
 			{
 				if (CurrentFrame > 8) CurrentFrame -= 8;
 				sprite.setTextureRect(IntRect(32 * int(CurrentFrame), 0, 32, 32));
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -476,7 +476,7 @@ public:
 		if (name == "Ammo") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -493,7 +493,7 @@ public:
 		if (name == "Heal") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -510,7 +510,7 @@ public:
 		if (name == "Armour") {
 			for (int i = 0; i < obj.size(); i++)
 			{
-				if (obj[i].name == "solid")//если встретили препятствие
+				if (obj[i].name == "solid")//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (Dy > 0)
 					{
@@ -565,15 +565,15 @@ public:
 	}
 };
 
-class Bullet :public Entity//класс пули
+class Bullet :public Entity//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 {
 public:
-	float targetX, targetY;//отвечают за направление движения пули к цели
+	float targetX, targetY;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 	float vx, vy, distance;
-	Bullet(Image& image, String Name, Level& lvl, float X, float Y, int W, int H, float tX, float tY) :Entity(image, Name, X, Y, W, H) {//всё так же, только взяли в конце состояние игрока (int dir)
+	Bullet(Image& image, String Name, Level& lvl, float X, float Y, int W, int H, float tX, float tY) :Entity(image, Name, X, Y, W, H) {//пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (int dir)
 
 		obj = lvl.GetObjects("solid");
-		obj2 = lvl.GetObjects("solidInvis");//инициализируем .получаем нужные объекты для взаимодействия пули с картой
+		obj2 = lvl.GetObjects("solidInvis");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ .пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		x = X;
 		y = Y;
 		targetX = tX;
@@ -582,52 +582,52 @@ public:
 		w = h = 16;
 		life = true;
 		//distance = sqrt((targetX - x) - (targetY - y));
-		vx = (targetX - x) / 30; // 100 - дистанция
+		vx = (targetX - x) / 30; // 100 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		vy = (targetY - y) / 30;
-		//выше инициализация в конструкторе
+		//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	}
 
 
 	void update(float time)
 	{
 
-		//x += speed*time*(targetX - x) /20;//само движение пули по х
-		//y += speed*time*(targetY - y) /20;//по у
+		//x += speed*time*(targetX - x) /20;//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ
+		//y += speed*time*(targetY - y) /20;//пїЅпїЅ пїЅ
 
 		x += vx * time * speed;
 		y += vy * time * speed;
 
-		if (x <= 0) x = 1;// задержка пули в левой стене, чтобы при проседании кадров она случайно не вылетела за предел карты и не было ошибки
+		if (x <= 0) x = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if (y <= 0) y = 1;
 
-		for (int i = 0; i < obj.size(); i++) {//проход по объектам solid
+		for (int i = 0; i < obj.size(); i++) {//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ solid
 			for (int i = 0; i < obj2.size(); i++) {
-				if (getRect().intersects(obj[i].rect) || getRect().intersects(obj2[i].rect)) //если этот объект столкнулся с пулей,
+				if (getRect().intersects(obj[i].rect) || getRect().intersects(obj2[i].rect)) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ,
 				{
 					if (obj[i].name == "solid" || obj2[i].name == "solidInvis")
 					{
-						life = false;// то пуля умирает
+						life = false;// пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					}
 				}
 			}
 		}
-		sprite.setPosition(x + w / 2, y + h / 2);//задается позицию пуле
+		sprite.setPosition(x + w / 2, y + h / 2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	}
 };
 
-class MovingPlatform : public Entity {//класс движущейся платформы
+class MovingPlatform : public Entity {//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 public:
 	MovingPlatform(Image& image, String Name, Level& lvl, float X, float Y, int W, int H) :Entity(image, Name, X, Y, W, H) {
-		sprite.setTextureRect(IntRect(0, 0, W, H));//прямоугольник 
-		dx = 0.08;//изначальное ускорение по Х
+		sprite.setTextureRect(IntRect(0, 0, W, H));//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
+		dx = 0.08;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ
 	}
 
-	void update(float time)//функция обновления платформы.
+	void update(float time)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	{
-		x += dx * time;//реализация движения по горизонтали
-		moveTimer += time;//наращиваем таймер
-		if (moveTimer > 2000) { dx *= -1; moveTimer = 0; }//если прошло примерно 2 сек, то меняется направление движения платформы, а таймер обнуляется
-		sprite.setPosition(x + w / 2, y + h / 2);//задаем позицию спрайту
+		x += dx * time;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		moveTimer += time;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		if (moveTimer > 2000) { dx *= -1; moveTimer = 0; }//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		sprite.setPosition(x + w / 2, y + h / 2);//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	}
 };
 
@@ -1233,9 +1233,9 @@ void menu(RenderWindow& window)
 		}
 		if (Mouse::isButtonPressed(Mouse::Left))
 		{
-			if (menuNum == 1) { continuee = 1; Menu = 0; gamerun = 1; gamestart = true; }//если нажали первую кнопку, то выходим из меню 
+			if (menuNum == 1) { continuee = 1; Menu = 0; gamerun = 1; gamestart = true; }//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ 
 			if (menuNum == 2) {bought[0] = 0;bought[1] = 0; Menu = 0; gamerun = 1; gamestart = true; }
-			if (menuNum == 3) { AdvMenu = 1; RaznMenu = 1; levelchange(window);}//если нажали первую кнопку, то выходим из меню 
+			if (menuNum == 3) { AdvMenu = 1; RaznMenu = 1; levelchange(window);}//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ 
 			if (menuNum == 4) { AdvMenu = 1; RaznMenu = 2; }
 			if (menuNum == 5) 
 			{
@@ -1293,16 +1293,16 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 	view.reset(FloatRect(0, 0, 640, 480));
 	//window.setVerticalSyncEnabled(true);
 	Level lvl;
-	changeLevel(lvl, numberLevel);//для загрузки карты для нужного уровня
+	changeLevel(lvl, numberLevel);//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 	set_profiles_goods(bought);
-	//SoundBuffer shootBuffer;//создаём буфер для звука
-	//shootBuffer.loadFromFile("shoot.ogg");//загружаем в него звук
-	//Sound shoot(shootBuffer);//создаем звук и загружаем в него звук из буфера
+	//SoundBuffer shootBuffer;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	//shootBuffer.loadFromFile("shoot.ogg");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	//Sound shoot(shootBuffer);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-	//Music music;//создаем объект музыки
-	//music.openFromFile("music.ogg");//загружаем файл
-	//music.play();//воспроизводим музыку
+	//Music music;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	//music.openFromFile("music.ogg");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	//music.play();//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	//music.setLoop(true);
 
 	Texture textureHPB, textureAB,textureSC;
@@ -1348,20 +1348,20 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 	Image movePlatformImage;
 	movePlatformImage.loadFromFile("images/MovingPlatform.png");
 
-	Image BulletImage;//изображение для пули
-	BulletImage.loadFromFile("images/Bullet1.png");//загрузили картинку в объект изображения
+	Image BulletImage;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	BulletImage.loadFromFile("images/Bullet1.png");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	Image BulletAWPImage;//изображение для пули
-	BulletAWPImage.loadFromFile("images/BulletAWP.png");//загрузили картинку в объект изображения
+	Image BulletAWPImage;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	BulletAWPImage.loadFromFile("images/BulletAWP.png");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	Image BulletP90Image;//изображение для пули
-	BulletP90Image.loadFromFile("images/BulletP90.png");//загрузили картинку в объект изображения
+	Image BulletP90Image;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	BulletP90Image.loadFromFile("images/BulletP90.png");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	Image BulletSHGImage;//изображение для пули
-	BulletSHGImage.loadFromFile("images/BulletShootGun.png");//загрузили картинку в объект изображения
+	Image BulletSHGImage;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	BulletSHGImage.loadFromFile("images/BulletShootGun.png");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	Image BulletEnemyImage;//изображение для пули
-	BulletEnemyImage.loadFromFile("images/BulletEnemy.png");//загрузили картинку в объект изображения
+	Image BulletEnemyImage;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	BulletEnemyImage.loadFromFile("images/BulletEnemy.png");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	Image AmmoImage;
 	AmmoImage.loadFromFile("images/Ammo.png");
@@ -1374,7 +1374,7 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 
 	std::list<Entity*>  entities;
 	std::list<Entity*>::iterator it;
-	std::list<Entity*>::iterator it2;//второй итератор.для взаимодействия между объектами списка
+	std::list<Entity*>::iterator it2;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 	std::vector<Object> e = lvl.GetObjects("EasyEnemy");
 
@@ -1435,7 +1435,7 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 		entities.push_back(new Weapon(AWPImage, "AWP", lvl, 0, 0, 64, 25));
 	}
 	Player p(heroImage, "Player1", lvl, player.rect.left, player.rect.top, 32, 48);
-	e = lvl.GetObjects("MovingPlatform");//забираем все платформы в вектор 
+	e = lvl.GetObjects("MovingPlatform");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	float moveTimer = 0, xHP = 640, xA = 640, xSC = 0, moveTimerEnemy = 0;
 	if (continuee == 1) 
 	{
@@ -1451,7 +1451,7 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 	float moveTimer_weapon = 0;
 	bool stopped = false;
 	
-	for (int i = 0; i < e.size(); i++) entities.push_back(new MovingPlatform(movePlatformImage, "MovingPlatform", lvl, e[i].rect.left, e[i].rect.top, 95, 22));//закидываем платформу в список.передаем изображение имя уровень координаты появления (взяли из tmx карты), а так же размеры
+	for (int i = 0; i < e.size(); i++) entities.push_back(new MovingPlatform(movePlatformImage, "MovingPlatform", lvl, e[i].rect.left, e[i].rect.top, 95, 22));//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ tmx пїЅпїЅпїЅпїЅпїЅ), пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	Clock clock;
 	float CurrentFrame1 = 0;
 	while (window.isOpen())
@@ -1477,11 +1477,11 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 			if (p.isShoot == true)
 			{
 				
-				if (event.type == Event::MouseButtonPressed)//если нажата клавиша мыши
-					if (event.key.code == Mouse::Left) //а именно левая, то стреляем 
-					{ //и тут же снимаем координаты мыши в этом месте
-						Vector2i pixelPos = Mouse::getPosition(window);//забираем коорд курсора
-						Vector2f pos = window.mapPixelToCoords(pixelPos);//переводим их в игровые (уходим от коорд окна)
+				if (event.type == Event::MouseButtonPressed)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					if (event.key.code == Mouse::Left) //пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
+					{ //пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+						Vector2i pixelPos = Mouse::getPosition(window);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						Vector2f pos = window.mapPixelToCoords(pixelPos);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
 						if (p.shoot <= 0)
 						{
 							p.shoot = 0;
@@ -1561,37 +1561,37 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 
 							p.shoot -= 1;
 						}
-						//shoot.play();//играем звук пули
+						//shoot.play();//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 					}
 			}
 		}
 
 		int hpp = 10, ar = 10;
 
-		for (it = entities.begin(); it != entities.end();)//говорим что проходимся от начала до конца
+		for (it = entities.begin(); it != entities.end();)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		{
-			Entity* b = *it;//для удобства, чтобы не писать (*it)->
-			b->update(time);//вызываем ф-цию update для всех объектов (по сути для тех, кто жив)
+			Entity* b = *it;//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (*it)->
+			b->update(time);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ-пїЅпїЅпїЅ update пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ)
 
 			if (b->life == false) {
 				it = entities.erase(it);/*
 															delete b;*/
 			}
-			else it++;//и идем курсором (итератором) к след объекту. так делаем со всеми объектами списка
+			else it++;//пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 
-		for (it = entities.begin(); it != entities.end(); it++)//проходимся по эл-там списка
+		for (it = entities.begin(); it != entities.end(); it++)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ-пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		{
 			
 
 
-			if (((*it)->name == "MovingPlatform") && ((*it)->getRect().intersects(p.getRect())))//если игрок столкнулся с объектом списка и имя этого объекта movingplatform
+			if (((*it)->name == "MovingPlatform") && ((*it)->getRect().intersects(p.getRect())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ movingplatform
 			{
 				Entity* movPlat = *it;
-				if ((p.dy > 0) || (p.onGround == false))//при этом игрок находится в состоянии после прыжка, т.е падает вниз
-					if (p.y + p.h < movPlat->y + movPlat->h)//если игрок находится выше платформы, т.е это его ноги минимум (тк мы уже проверяли что он столкнулся с платформой)
+				if ((p.dy > 0) || (p.onGround == false))//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ.пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					if (p.y + p.h < movPlat->y + movPlat->h)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ.пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 					{
-						p.y = movPlat->y - p.h + 3; p.x += movPlat->dx * time; p.dy = 0; p.onGround = true; // то выталкиваем игрока так, чтобы он как бы стоял на платформе
+						p.y = movPlat->y - p.h + 3; p.x += movPlat->dx * time; p.dy = 0; p.onGround = true; // пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					}
 			}
 			if ((*it)->name == "EasyShootEnemy" && abs((*it)->x - p.x) < 300)
@@ -1610,10 +1610,10 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 			if (((*it)->name == "EasyEnemy" && ((*it)->getRect().intersects(p.getRect()))))
 			{
 
-				////////выталкивание врага
-				if ((*it)->dx > 0)//если враг идет вправо
+				////////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				if ((*it)->dx > 0)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				{
-					//(*it)->x = p.x - (*it)->w; //отталкиваем его от игрока влево (впритык)
+					//(*it)->x = p.x - (*it)->w; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 					if (p.armour > 0)
 					{
 						p.armour -= 5;
@@ -1642,12 +1642,12 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 					}
 
 
-					//(*it)->dx = 0;//останавливаем
+					//(*it)->dx = 0;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				}
-				if ((*it)->dx < 0)//если враг идет влево
+				if ((*it)->dx < 0)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				{
-					//(*it)->x = p.x + p.w; ////налогично - отталкиваем вправо
-					//(*it)->dx = 0;//останавливаем
+					//(*it)->x = p.x + p.w; ////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					//(*it)->dx = 0;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					if (p.armour > 0)
 					{
 						p.armour -= 5;
@@ -1674,22 +1674,22 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 						
 					}
 				}
-				///////выталкивание игрока
+				///////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				if (p.dx < 0)
 				{
 					//p.x = (*it)->x + (*it)->w;
 					//(*it)->health -=1 ;
-				}//если столкнулись с врагом и игрок идет влево то выталкиваем игрока
+				}//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				if (p.dx > 0)
 				{
 					//p.x = (*it)->x - p.w;
 					//(*it)->health -= 1;
-				}//если столкнулись с врагом и игрок идет вправо то выталкиваем игрока		
+				}//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ		
 			}
 			for (it2 = entities.begin(); it2 != entities.end(); it2++)
 			{
-				if ((*it)->getRect() != (*it2)->getRect())//при этом это должны быть разные прямоугольники
-					if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "Bullet"))//если столкнулись два объекта и они враги
+				if ((*it)->getRect() != (*it2)->getRect())//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "Bullet"))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					{
 						float tmpX, tmpY;
 						int randd;
@@ -1741,7 +1741,7 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 							p.playerScore += 1;
 
 					}
-				if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyShootEnemy") && ((*it2)->name == "Bullet"))//если столкнулись два объекта и они враги
+				if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyShootEnemy") && ((*it2)->name == "Bullet"))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				{
 					float tmpX, tmpY;
 					int randd;
@@ -1924,21 +1924,21 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 			}
 			for (it2 = entities.begin(); it2 != entities.end(); it2++)
 			{
-				if ((*it)->getRect() != (*it2)->getRect())//при этом это должны быть разные прямоугольники
-					if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "EasyEnemy"))//если столкнулись два объекта и они враги
+				if ((*it)->getRect() != (*it2)->getRect())//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "EasyEnemy"))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					{
-						(*it)->dx *= -1;//меняем направление движения врага
-						(*it)->sprite.scale(-1, 1);//отражаем спрайт по горизонтали
+						(*it)->dx *= -1;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+						(*it)->sprite.scale(-1, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					}
-				if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "EasyShootEnemy"))//если столкнулись два объекта и они враги
+				if (((*it)->getRect().intersects((*it2)->getRect())) && ((*it)->name == "EasyEnemy") && ((*it2)->name == "EasyShootEnemy"))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				{
-					(*it)->dx *= -1;//меняем направление движения врага
-					(*it)->sprite.scale(-1, 1);//отражаем спрайт по горизонтали
+					(*it)->dx *= -1;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+					(*it)->sprite.scale(-1, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				}
 			}
 		}
 		if (Keyboard::isKeyPressed(Keyboard::T)) { lvl.levelNumber++; return true; }
-		if (Keyboard::isKeyPressed(Keyboard::Tab)) { return true; }//если таб, то перезагружаем игру
+		if (Keyboard::isKeyPressed(Keyboard::Tab)) { return true; }//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		if (Keyboard::isKeyPressed(Keyboard::F5)) 
 		{
 			set_pos_player(p,xHP,xA,xSC, bought[0], LvUpS, LvUpD);
@@ -1983,8 +1983,8 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 			return gamestart;
 		}
 
-		//если эскейп, то выходим из игры
-		p.update(time);//перенесли сюда update игрока
+		//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+		p.update(time);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ update пїЅпїЅпїЅпїЅпїЅпїЅ
 		window.setView(view);
 		window.clear(Color(66, 61, 91));
 		lvl.Draw(window);
@@ -2041,7 +2041,7 @@ bool startGame(RenderWindow& window, int& numberLevel,bool& gamestart) {
 }
 
 void gameRunning(RenderWindow& window, int& numberLevel,bool& gamestart) 
-{//ф-ция перезагружает игру , если это необходимо
+{//пїЅ-пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	
 		if (startGame(window, numberLevel, gamestart))
 		{
@@ -2049,12 +2049,12 @@ void gameRunning(RenderWindow& window, int& numberLevel,bool& gamestart)
 			
 			gameRunning(window, numberLevel, gamestart);
 
-		}//принимает с какого уровня начать игру
+		}//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 }
 
 int main()
 {
-	int numberLevel = 1;//сначала 1-ый уровень
+	int numberLevel = 1;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if (gamerun == 1)
 		{
 			menu(window);
